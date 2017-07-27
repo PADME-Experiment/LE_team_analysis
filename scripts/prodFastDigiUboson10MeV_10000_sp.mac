@@ -1,0 +1,22 @@
+# Macro file for PADME MC productions
+#
+# BEAM 
+/beam/n_e+_per_bunch     1
+/beam/n_e+_poisson_on    false
+/beam/n_uboson_per_bunch 1
+/beam/uboson_mass       10.
+#### notice 1positron per bunch will interact producing 1 Uboson 
+#### notice the beam is (not default) made of ONE (no poissonian fluctuations) single positrons
+#
+#/Detector/Target/DisableFastDigitization
+#/Detector/Target/EnableSaveWaveformToDigi
+#
+# VERBOSITY 
+/control/verbose 1
+/run/verbose 0
+/event/verbose 0
+/tracking/verbose 0
+# 
+#### this must come at the end of everything 
+/run/initialize
+/run/beamOn 10000
